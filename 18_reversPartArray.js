@@ -1,3 +1,4 @@
+// не стреляйте в пианиста, он играет как умеет!!)))))
 function reversArray(array) {
     const newArray = [];
 
