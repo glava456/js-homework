@@ -1,16 +1,16 @@
 function changeNumToWord(str) {
-    var result_array = str.split(' ');
-    console.log(result_array);
+    var array = str.split(' ');
+    console.log(array);
 
     var result = [];
 
     var zero = 0;
-    if (result_array[0] == 'ноль') {
+    if (array[0] == 'ноль') {
         result.push(zero);
     }
 
     else {
-        for (i = 0; i < result_array.length; i++) {
+        for (i = 0; i < array.length; i++) {
             var from0To19 = [
                 zero, 'один', 'два', 'три', 'четыре',
                 'пять', 'шесть', 'семь', 'восемь', 'девять',
@@ -27,13 +27,17 @@ function changeNumToWord(str) {
             ];
 
 
-            if (result_array.length == 3) {
-                result_array[0] 
-               
+            if (array.length == 3) {
+                for (j = 0; j < hundreds.length; j++) {
+                    console.log (array[0]);
+                if (array[0] == hundreds[j]){
+                    result.push(j+1);
+                }
             }
 
         }
-        return result.join(' ');
+        return result.join('');
     }
 }
-    console.log(changeNumToWord('восемьсот двадцать три'));
+}
+    console.log(changeNumToWord('девятьсот двадцать три'));
