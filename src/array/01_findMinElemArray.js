@@ -7,4 +7,4 @@ function findMinElemArray(array){
     return min;
 }
 
-console.log(findMinElemArray([5, 6, 10, 2, 1, 7]));
+module.exports = { findMinElemArray }
