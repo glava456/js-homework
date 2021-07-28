@@ -1,0 +1,15 @@
+{
+  "name": "js-homework",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/glava456/js-homework.git",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
+}
