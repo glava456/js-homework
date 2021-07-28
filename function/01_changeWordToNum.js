@@ -1,10 +1,10 @@
 function changeNumToWord(str) {
-    var array = str.split(' ');
+    let array = str.split(' ');
 
-    var result = [];
+    let result = [];
 
-    var zero = 0;
-    if (array[0] == 'ноль') {
+    let zero = 0;
+    if (array[0] === 'ноль') {
         result.push(zero);
     }
     else {
@@ -24,20 +24,20 @@ function changeNumToWord(str) {
                 'шестьсот', 'семьсот', 'восемьсот', 'девятьсот'
             ];
             if (array.length == 3) {
-                for (j = 0; j < hundreds.length; j++) {
-                    if (array[i] == hundreds[j]) {
+                for (var j = 0; j < hundreds.length; j++) {
+                    if (array[i] === hundreds[j]) {
                         result.push(j + 1);
                     }
                 }
 
                 for (n = 0; n < tens.length; n++) {
-                    if (array[i + 1] == tens[n]) {
+                    if (array[i + 1] === tens[n]) {
                         result.push(n + 1);
                     }
 
                 }
                 for (z = 0; z < from0To19.length; z++) {
-                    if (array[i + 2] == from0To19[z]) {
+                    if (array[i + 2] === from0To19[z]) {
                         result.push(z);
                     }
                 }
@@ -45,20 +45,20 @@ function changeNumToWord(str) {
 
             if (array.length == 2) {
                 for (j = 0; j < hundreds.length; j++) {
-                    if (array[i] == hundreds[j]) {
+                    if (array[i] === hundreds[j]) {
                         result.push(j + 1);
 
                     }
                 }
 
                 for (n = 0; n < tens.length; n++) {
-                    if (array[i] == tens[n]) {
+                    if (array[i] === tens[n]) {
                         result.push(n + 1);
                     }
 
                 }
                 for (z = 0; z < from0To19.length; z++) {
-                    if (array[i + 1] == from0To19[z]) {
+                    if (array[i + 1] === from0To19[z]) {
                         if (z > 9) {
                             result.push(0);
                         }
@@ -67,16 +67,16 @@ function changeNumToWord(str) {
                 }
             }
 
-            if (array.length == 1) {
+            if (array.length === 1) {
                 for (j = 0; j < hundreds.length; j++) {
-                    if (array[i] == hundreds[j]) {
+                    if (array[i] === hundreds[j]) {
                         result.push(j + 1);
                         result.push(0);
                         result.push(0);
                     }
                 }
                 for (n = 0; n < tens.length; n++) {
-                    if (array[i] == tens[n]) {
+                    if (array[i] === tens[n]) {
                         result.push(n + 1);
                         result.push(0);
                     }

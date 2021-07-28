@@ -1,16 +1,14 @@
 function changeNumToWord(str) {
-    var array = str.split(' ');
-    console.log(array);
-
-    var result = [];
+    let array = str.split(' ');
+    let result = [];
     // var result_thousand = [];
 
-    var zero = 0;
-    if (array[0] == 'ноль') {
+    let zero = 0;
+    if (array[0] === 'ноль') {
         result.push(zero);
     }
     else {
-        for (i = 0; i < array.length; i++) {
+        for (var i = 0; i < array.length; i++) {
             var from0To19 = [
                 zero, 'один', 'два', 'три', 'четыре',
                 'пять', 'шесть', 'семь', 'восемь', 'девять',
@@ -31,22 +29,22 @@ function changeNumToWord(str) {
             //     'миллиардов'
             // ];
 
-            for (j = 0; j < hundreds.length; j++) {
-                if (array[i] == hundreds[j]) {
+            for (var j = 0; j < hundreds.length; j++) {
+                if (array[i] === hundreds[j]) {
                     result.push(j + 1);
                 }
             }
 
-            for (n = 0; n < tens.length; n++) {
+            for (var n = 0; n < tens.length; n++) {
 
-                if (array.length == 3) {
-                    if (array[i + 1] == tens[n]) {
+                if (array.length === 3) {
+                    if (array[i + 1] === tens[n]) {
                         result.push(n + 1);
                     }
                 }
 
-                if (array.length == 2) {
-                    if (array[i + 1] == tens[n]) {
+                if (array.length === 2) {
+                    if (array[i + 1] === tens[n]) {
                         result.push(n + 1);
                         if (n < 9) {
                             result.push(0);
@@ -55,24 +53,22 @@ function changeNumToWord(str) {
                 }
 
                 if (array.length == 1) {
-                    if (array[i] == tens[n - 1]) {
+                    if (array[i] === tens[n - 1]) {
                         result.push(n);
                         result.push(0);
                     }
                 }
-
             }
 
-
-            for (z = 0; z < from0To19.length; z++) {
-                if (array.length == 3) {
-                    if (array[i + 2] == from0To19[z]) {
+            for (var z = 0; z < from0To19.length; z++) {
+                if (array.length === 3) {
+                    if (array[i + 2] === from0To19[z]) {
                         result.push(z);
                     }
                 }
 
                 if (array.length == 2) {
-                    if (array[i + 1] == from0To19[z]) {
+                    if (array[i + 1] === from0To19[z]) {
                         if (z < 9) {
                             result.push(0);
                         }
@@ -80,26 +76,25 @@ function changeNumToWord(str) {
                     }
                 }
 
-                if (array.length == 1) {
-                    if (array[i] == from0To19[z]) {
+                if (array.length === 1) {
+                    if (array[i] === from0To19[z]) {
                         result.push(z);
                     }
                 }
 
             }
 
-
-            if (array.length == 1) {
-                for (j = 0; j < hundreds.length; j++) {
-                    if (array[i] == hundreds[j]) {
+            if (array.length === 1) {
+                for (var j = 0; j < hundreds.length; j++) {
+                    if (array[i] === hundreds[j]) {
                         result.push(j + 1);
                         result.push(0);
                         result.push(0);
                     }
                 }
             }
-            return Number(result.join(''));
+            return parseInt(result.join(''));
         }
     }
 }
-console.log(changeNumToWord('семьсот восемьдесят'));
+console.log(changeNumToWord('семьсот восемь'));
