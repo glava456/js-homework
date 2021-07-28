@@ -1,14 +1,12 @@
 // не стреляйте в пианиста, он играет как умеет!!)))))
 function reversArray(array) {
     const newArray = [];
-
-    for (i = 0; i < array.length; i++) {
-
+    for (var i = 0; i < array.length; i++) {
         if (array.length % 2 == 0) {
             /* устанавливаем начальное значение среднего индекса */
             let mid_i = array.length / 2;
             if (i > mid_i) {
-                for (j = 0; j < mid_i; j++) {
+                for (var j = 0; j < mid_i; j++) {
                     let after = array[j];
                     newArray[mid_i + j] = after;
                 }
@@ -21,7 +19,7 @@ function reversArray(array) {
         else {
             let mid_odd_i = Math.round(array.length / 2);
             if (i == mid_odd_i) {
-                newArray[mid_odd_i-1] = array[i-1];
+                newArray[mid_odd_i - 1] = array[i - 1];
             }
             if (i > mid_odd_i) {
                 for (j = 0; j < mid_odd_i - 1; j++) {

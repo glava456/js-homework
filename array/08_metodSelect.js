@@ -1,9 +1,9 @@
 function sortSelect(array) {
-    for (i = 0; i < array.length - 1; i++) {
+    for (var i = 0; i < array.length - 1; i++) {
         /* устанавливаем начальное значение минимального индекса */
                 let min_i = i;
             /* находим индекс минимального элемента */
-            for (j = i + 1; j < array.length; j++) {
+            for (var j = i + 1; j < array.length; j++) {
                 if (array[j] < array[min_i]) {
                     min_i = j;
                 }

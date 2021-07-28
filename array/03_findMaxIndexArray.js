@@ -1,6 +1,6 @@
 function findMaxElemArray(array) {
-    var max = array[0];
-    var imax = 0;
+    let max = array[0];
+    let imax = 0;
     for (var i = 0; i < array.length; i++) {
         if (max < array[i]) {
             max = array[i];
