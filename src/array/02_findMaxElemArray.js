@@ -7,4 +7,5 @@ function findMaxElemArray(array){
     return max;
 }
 
-console.log(findMaxElemArray([5, 6, 10, 2, 1, 7]));
+module.exports = { findMaxElemArray }
+
