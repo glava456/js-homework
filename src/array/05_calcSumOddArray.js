@@ -8,4 +8,4 @@ function calcSumOddArray(array) {
     return odd_sum;
 }
 
-console.log(calcSumOddArray([-2, 5, 6, 10, 2, 1, 7, -100]));
+module.exports = { calcSumOddArray }
