@@ -10,4 +10,5 @@ function findMinIndexArray(array) {
     return imin;
 }
 
-console.log(findMinIndexArray([-2, 5, 6, 10, 2, 1, 7, -100]));
+module.exports = { findMinIndexArray }
+
