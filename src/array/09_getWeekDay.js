@@ -29,4 +29,4 @@ function getWeekDay(num) {
     return result;
 }
 
-console.log(getWeekDay(4));
+module.exports = { getWeekDay }
