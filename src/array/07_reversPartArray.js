@@ -1,5 +1,5 @@
 // не стреляйте в пианиста, он играет как умеет!!)))))
-function reversArray(array) {
+function reversPartArray(array) {
     const newArray = [];
     for (var i = 0; i < array.length; i++) {
         if (array.length % 2 == 0) {
@@ -36,4 +36,4 @@ function reversArray(array) {
     return newArray;
 }
 
-console.log(reversArray([1, 2, 3, 4, 5, 8, 9, 10, 11]));
+module.exports = { reversPartArray }
