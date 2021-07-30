@@ -16,4 +16,4 @@ function sortSelect(array) {
     return array;
 }
 
-console.log(sortSelect([5, 2, 1, 4, 3, 6]));
+module.exports = { sortSelect }
