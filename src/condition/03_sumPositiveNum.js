@@ -11,5 +11,5 @@ function sumPositiveNum(a, b, c) {
     return a + b + c;
 }
 
-let sum = sumPositiveNum(-1, 10, 0);
-console.log(sum);
+
+module.exports = { sumPositiveNum }

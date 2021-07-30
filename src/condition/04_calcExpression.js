@@ -8,4 +8,5 @@
 function calcExpression(a, b, c) {
     return Math.max((a + b + c), (a * b * c)) + 3;
 }
-console.log(calcExpression(1, 10, 50));
+
+module.exports = { calcExpression }

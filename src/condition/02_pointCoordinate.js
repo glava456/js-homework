@@ -1,4 +1,4 @@
-function pointСoordinate(x, y) {
+function pointCoordinate(x, y) {
     if (x > 0 && y > 0) {
         return "точка принадлежит первой четверти";
     }
@@ -15,8 +15,8 @@ function pointСoordinate(x, y) {
         return "принадлежит четвертой координатной четверти";
     }
 }
-var resalt = pointСoordinate(-2, 5);
-console.log (resalt);
+
+module.exports = { pointCoordinate }
 
 
 

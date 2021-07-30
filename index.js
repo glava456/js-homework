@@ -8,6 +8,9 @@ const { reversPartArray } = require('./src/array/07_reversPartArray');
 const { sortSelect } = require('./src/array/08_metodSelect');
 const { getWeekDay } = require('./src/array/09_getWeekDay');
 const { calcNum } = require('./src/condition/01_calcNum');
+const { pointCoordinate } = require('./src/condition/02_pointCoordinate');
+const { sumPositiveNum } = require('./src/condition/03_sumPositiveNum');
+const { calcExpression } = require('./src/condition/04_calcExpression');
 
 
 console.log('findMaxElemArray', findMaxElemArray([5, 6, 10, 2, 1, 7]));
@@ -20,6 +23,9 @@ console.log('reversPartArray', reversPartArray([1, 2, 3, 4, 5, 8, 9, 10, 11]));
 console.log('sortSelect', sortSelect([5, 2, 1, 4, 3, 6]));
 console.log('getWeekDay' , getWeekDay(4));
 console.log('calcNum' , calcNum(2, 5));
+console.log ('pointCoordinate', pointCoordinate(-2, 5));
+console.log('sumPositiveNum' , sumPositiveNum(-1, 10, 0));
+console.log('calcExpression' , calcExpression(1, 10, 50));
 
 // const a = ['','']
 
