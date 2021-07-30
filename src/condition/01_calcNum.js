@@ -7,4 +7,4 @@ function calcNum(a, b) {
     }
 };
 
-console.log(calcNum(2, 5));
+module.exports = { calcNum }
