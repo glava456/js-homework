@@ -5,7 +5,7 @@ function sumNumb(numb) {
             sum += i;
         }
     }
-    console.log(sum);
+    return sum;
 }
 
-sumNumb(99);
+module.exports = { sumNumb }
