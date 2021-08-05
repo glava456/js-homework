@@ -11,6 +11,7 @@ const { calcNum } = require('./src/condition/01_calcNum');
 const { pointCoordinate } = require('./src/condition/02_pointCoordinate');
 const { sumPositiveNum } = require('./src/condition/03_sumPositiveNum');
 const { calcExpression } = require('./src/condition/04_calcExpression');
+const { showRating } = require('./src/condition/05_showRating');
 
 
 console.log('findMaxElemArray', findMaxElemArray([5, 6, 10, 2, 1, 7]));
@@ -26,6 +27,7 @@ console.log('calcNum' , calcNum(2, 5));
 console.log ('pointCoordinate', pointCoordinate(-2, 5));
 console.log('sumPositiveNum' , sumPositiveNum(-1, 10, 0));
 console.log('calcExpression' , calcExpression(1, 10, 50));
+console.log( 'showRating' , showRating(100));
 
 // const a = ['','']
 

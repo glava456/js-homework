@@ -21,4 +21,7 @@ function showRating(mark) {
         return "A";
     }
 }
-console.log(showRating(100));
+
+module.exports = { showRating }
+
+
