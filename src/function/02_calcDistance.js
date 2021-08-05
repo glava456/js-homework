@@ -3,4 +3,4 @@ function calcDistance(xa, ya, xb, yb) {
     return distance;
 };
 
-console.log(calcDistance(3, 5, -2, -108));
+module.exports = { calcDistance }

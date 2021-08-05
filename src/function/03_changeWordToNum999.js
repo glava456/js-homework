@@ -1,4 +1,4 @@
-function changeNumToWord(str) {
+function changeWordToNum(str) {
     let array = str.split(' ');
     let result = [];
     // var result_thousand = [];
@@ -97,4 +97,5 @@ function changeNumToWord(str) {
         }
     }
 }
-console.log(changeNumToWord('семьсот восемь'));
+
+module.exports = { changeWordToNum }

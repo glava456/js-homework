@@ -42,4 +42,4 @@ function changeNumToWord(num) {
         return result.join(' ');
     }
 }
-console.log(changeNumToWord(999));
+module.exports = { changeNumToWord }

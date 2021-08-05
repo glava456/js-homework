@@ -18,6 +18,9 @@ const { natureNum } = require('./src/cycle/03_naturNub');
 const { calcFactorial } = require('./src/cycle/04_calcFactorial');
 const { calcSumNumbers } = require('./src/cycle/05_calcSumNumbers');
 const { showRevers } = require('./src/cycle/06_showRevers');
+const { changeNumToWord } = require('./src/function/01_changeNumToWord');
+const { calcDistance } = require('./src/function/02_calcDistance');
+const { changeWordToNum } = require('./src/function/03_changeWordToNum999');
 
 console.log('findMaxElemArray', findMaxElemArray([5, 6, 10, 2, 1, 7]));
 console.log('findMinElemArray', findMinElemArray([5, 6, 10, 2, 1, 7]));
@@ -39,6 +42,9 @@ console.log('natureNum' , natureNum(97));
 console.log('calcFactorial' , calcFactorial(5));
 console.log('calcSumNumbers' , calcSumNumbers(123456));
 console.log('showRevers' , showRevers(123456));
+console.log('changeNumToWord' , changeNumToWord(999));
+console.log('calcDistance' , calcDistance(3, 5, -2, -108));
+console.log('changeWordToNum' , changeWordToNum('семьсот восемь'));
 // const a = ['','']
 
 // const { b,c } = a
