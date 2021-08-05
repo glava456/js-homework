@@ -7,4 +7,4 @@ function calcSumNumbers(n) {
     return sum;
 }
 
-console.log(calcSumNumbers(123456));
+module.exports = { calcSumNumbers }

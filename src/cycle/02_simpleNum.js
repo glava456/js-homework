@@ -7,4 +7,4 @@ function simpleNum(num) {
     }
     return true;
   }
-console.log(simpleNum(97));
+  module.exports = { simpleNum }

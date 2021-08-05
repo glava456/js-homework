@@ -13,7 +13,11 @@ const { sumPositiveNum } = require('./src/condition/03_sumPositiveNum');
 const { calcExpression } = require('./src/condition/04_calcExpression');
 const { showRating } = require('./src/condition/05_showRating');
 const { sumNumb } = require('./src/cycle/01_sumNumb');
-
+const { simpleNum } = require('./src/cycle/02_simpleNum');
+const { natureNum } = require('./src/cycle/03_naturNub');
+const { calcFactorial } = require('./src/cycle/04_calcFactorial');
+const { calcSumNumbers } = require('./src/cycle/05_calcSumNumbers');
+const { showRevers } = require('./src/cycle/06_showRevers');
 
 console.log('findMaxElemArray', findMaxElemArray([5, 6, 10, 2, 1, 7]));
 console.log('findMinElemArray', findMinElemArray([5, 6, 10, 2, 1, 7]));
@@ -30,7 +34,11 @@ console.log('sumPositiveNum' , sumPositiveNum(-1, 10, 0));
 console.log('calcExpression' , calcExpression(1, 10, 50));
 console.log( 'showRating' , showRating(100));
 console.log('sumNumb', sumNumb(99));
-
+console.log('simpleNum' , simpleNum(97));
+console.log('natureNum' , natureNum(97));
+console.log('calcFactorial' , calcFactorial(5));
+console.log('calcSumNumbers' , calcSumNumbers(123456));
+console.log('showRevers' , showRevers(123456));
 // const a = ['','']
 
 // const { b,c } = a

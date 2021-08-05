@@ -5,4 +5,4 @@ function calcFactorial(n) {
   }
   return total;
 }
-console.log(calcFactorial(5));
+module.exports = { calcFactorial }

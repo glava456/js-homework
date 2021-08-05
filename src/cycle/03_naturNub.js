@@ -5,7 +5,7 @@ function natureNum(num) {
   }
   return root;
 }
-console.log(natureNum(97));
+module.exports = { natureNum }
 
 // Отрицательные и нецелые числа к натуральным не относят. 
 // Суть бинарного поиска - изначально отсортивать значение согласно условиям задачи

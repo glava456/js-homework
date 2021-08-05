@@ -7,4 +7,4 @@ function showRevers(n) {
     }
     return resalt;
 }
-console.log(showRevers(123456));
+module.exports = { showRevers }
