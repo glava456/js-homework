@@ -9,7 +9,15 @@
     "start": "node index.js",
     "test": "jest"
   },
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": [
+      "lcov"
+    ],
+    "coverageDirectory": "./output/code-coverage"
+  },
   "devDependencies": {
-    "jest": "^27.0.6"
+    "jest": "^27.0.6",
+    "jest-html-reporters": "^2.1.6"
   }
 }
