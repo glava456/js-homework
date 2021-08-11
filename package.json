@@ -11,9 +11,7 @@
   },
   "jest": {
     "collectCoverage": true,
-    "coverageReporters": [
-      "lcov"
-    ],
+    "coverageReporters": ["lcov"],
     "coverageDirectory": "./output/code-coverage"
   },
   "devDependencies": {

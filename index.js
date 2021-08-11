@@ -28,7 +28,7 @@ console.log('findMaxIndexElemArray', findMaxIndexElemArray ([100, 0, 5, 8, 7, 6,
 console.log('findMinIndexArray', findMinIndexArray([-2, 5, 6, 10, 2, 1, 7, -100]));
 console.log('calcSumOddArray', calcSumOddArray([-2, 5, 6, 10, 2, 1, 7, -100]));
 console.log('reversArray',reversArray([-2, 5, 6, 10, 2, 1, 7, -100]));
-console.log('reversPartArray', reversPartArray([1, 2, 3, 4, 5, 8, 9, 10, 11]));
+console.log('reversPartArray', reversPartArray([1, 2, 3, 4, 5, 8, 9, 10]));
 console.log('sortSelect', sortSelect([5, 2, 1, 4, 3, 6]));
 console.log('getWeekDay' , getWeekDay(4));
 console.log('calcNum' , calcNum(2, 5));
