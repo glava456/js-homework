@@ -23,16 +23,16 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">60% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>9/15</span>
+                <span class='fraction'>17/17</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">57.14% </span>
+                <span class="strong">96.67% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>16/28</span>
+                <span class='fraction'>29/30</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">60% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>9/15</span>
+                <span class='fraction'>17/17</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -84,27 +84,39 @@
 <a name='L25'></a><a href='#L25'>25</a>
 <a name='L26'></a><a href='#L26'>26</a>
 <a name='L27'></a><a href='#L27'>27</a>
-<a name='L28'></a><a href='#L28'>28</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -112,27 +124,33 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">function showRating(mark) {
-    <span class="missing-if-branch" title="if path not taken" >I</span>if (mark &lt; 0 || mark &gt; 100) {
-<span class="cstat-no" title="statement not covered" >        return "неверное значение";</span>
+    if (typeof mark !== 'number') {
+        return "Неверный тип данных";
     }
-    else <span class="missing-if-branch" title="if path not taken" >I</span>if (mark &lt;= 19 &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >mark &gt;= 0)</span> {
-<span class="cstat-no" title="statement not covered" >        return "F";</span>
+&nbsp;
+    else { 
+    if (mark &lt; 0 || mark &gt; 100) {
+        return "неверное значение";
     }
-    else <span class="missing-if-branch" title="if path not taken" >I</span>if (mark &lt;= 39 &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >mark &gt;= 20)</span> {
-<span class="cstat-no" title="statement not covered" >        return "E";</span>
+    else if (mark &lt;= 19 &amp;&amp; mark &gt;= 0) {
+        return "F";
     }
-    else <span class="missing-if-branch" title="if path not taken" >I</span>if (mark &lt;= 59 &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >mark &gt;= 40)</span> {
-<span class="cstat-no" title="statement not covered" >        return "D";</span>
+    else if (mark &lt;= 39 &amp;&amp; mark &gt;= 20) {
+        return "E";
     }
-    else <span class="missing-if-branch" title="if path not taken" >I</span>if (mark &lt;= 74 &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >mark &gt;= 60)</span> {
-<span class="cstat-no" title="statement not covered" >        return "C";</span>
+    else if (mark &lt;= 59 &amp;&amp; mark &gt;= 40) {
+        return "D";
     }
-    else <span class="missing-if-branch" title="if path not taken" >I</span>if (mark &lt;= 89 &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >mark &gt;= 75)</span> {
-<span class="cstat-no" title="statement not covered" >        return "B";</span>
+    else if (mark &lt;= 74 &amp;&amp; mark &gt;= 60) {
+        return "C";
+    }
+    else if (mark &lt;= 89 &amp;&amp; mark &gt;= 75) {
+        return "B";
     }
     else <span class="missing-if-branch" title="else path not taken" >E</span>if (mark &lt;= 100 &amp;&amp; mark &gt;= 90) {
         return "A";
     }
+}
 }
 &nbsp;
 module.exports = { showRating }
@@ -145,7 +163,7 @@ module.exports = { showRating }
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Wed Aug 11 2021 16:40:04 GMT+0300 (Восточная Европа, летнее время)
+                at Thu Aug 12 2021 16:51:16 GMT+0300 (Восточная Европа, летнее время)
             </div>
         </div>
         <script src="../prettify.js"></script>

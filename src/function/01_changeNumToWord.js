@@ -1,10 +1,12 @@
 function changeNumToWord(num) {
     if (num >= 0) {
         let result = [];
-        let zero = 'ноль';
-        if (num === '0') {
-            result.push(zero);
-        } else {
+        const zero = 'ноль';
+        if (num === 0) {
+            result.push('ноль');
+            return result.join('');
+        }
+        else {
             const from0To19 = [
                 zero, 'один', 'два', 'три', 'четыре',
                 'пять', 'шесть', 'семь', 'восемь', 'девять',

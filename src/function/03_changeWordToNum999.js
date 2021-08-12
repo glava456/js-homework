@@ -3,9 +3,10 @@ function changeWordToNum(str) {
     let result = [];
     // var result_thousand = [];
 
-    let zero = 0;
+    const zero = 0;
     if (array[0] === 'ноль') {
         result.push(zero);
+        return parseInt(result.join(''));
     }
     else {
         for (var i = 0; i < array.length; i++) {
@@ -33,9 +34,19 @@ function changeWordToNum(str) {
                 if (array[i] === hundreds[j]) {
                     result.push(j + 1);
                 }
+
+                if (array.length === 1) {
+                    for (var j = 0; j < hundreds.length; j++) {
+                        if (array[i] === hundreds[j]) {
+                            result.push(j + 1);
+                            result.push(0);
+                            result.push(0);
+                        }
+                    }
+                }
             }
 
-            for (var n = 0; n < tens.length; n++) {
+            for (var n = 0; n <= tens.length; n++) {
 
                 if (array.length === 3) {
                     if (array[i + 1] === tens[n]) {
@@ -44,11 +55,8 @@ function changeWordToNum(str) {
                 }
 
                 if (array.length === 2) {
-                    if (array[i + 1] === tens[n]) {
+                    if (array[i] === tens[n]) {
                         result.push(n + 1);
-                        if (n < 9) {
-                            result.push(0);
-                        }
                     }
                 }
 
@@ -84,17 +92,11 @@ function changeWordToNum(str) {
 
             }
 
-            if (array.length === 1) {
-                for (var j = 0; j < hundreds.length; j++) {
-                    if (array[i] === hundreds[j]) {
-                        result.push(j + 1);
-                        result.push(0);
-                        result.push(0);
-                    }
-                }
-            }
             return parseInt(result.join(''));
+           
         }
+
+        
     }
 }
 

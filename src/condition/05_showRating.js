@@ -1,4 +1,9 @@
 function showRating(mark) {
+    if (typeof mark !== 'number') {
+        return "Неверный тип данных";
+    }
+
+    else { 
     if (mark < 0 || mark > 100) {
         return "неверное значение";
     }
@@ -20,6 +25,7 @@ function showRating(mark) {
     else if (mark <= 100 && mark >= 90) {
         return "A";
     }
+}
 }
 
 module.exports = { showRating }

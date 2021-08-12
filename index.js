@@ -44,7 +44,7 @@ console.log('calcSumNumbers' , calcSumNumbers(123456));
 console.log('showRevers' , showRevers(123456));
 console.log('changeNumToWord' , changeNumToWord(999));
 console.log('calcDistance' , calcDistance(3, 5, -2, -108));
-console.log('changeWordToNum' , changeWordToNum('семьсот восемь'));
+console.log('changeWordToNum' , changeWordToNum('ноль'));
 // const a = ['','']
 
 // const { b,c } = a
