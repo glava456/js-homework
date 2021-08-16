@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">8.33% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>1/12</span>
+                <span class='fraction'>12/12</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/1</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">10% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>1/10</span>
+                <span class='fraction'>10/10</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -77,40 +77,40 @@
 <a name='L18'></a><a href='#L18'>18</a>
 <a name='L19'></a><a href='#L19'>19</a>
 <a name='L20'></a><a href='#L20'>20</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">function <span class="fstat-no" title="function not covered" >sortSelect(</span>array) {
-<span class="cstat-no" title="statement not covered" >    for (var i = <span class="cstat-no" title="statement not covered" >0;</span> i &lt; array.length - 1; i++) {</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">function sortSelect(array) {
+    for (var i = 0; i &lt; array.length - 1; i++) {
         /* устанавливаем начальное значение минимального индекса */
-                let min_i = <span class="cstat-no" title="statement not covered" >i;</span>
+                let min_i = i;
             /* находим индекс минимального элемента */
-<span class="cstat-no" title="statement not covered" >            for (var j = <span class="cstat-no" title="statement not covered" >i + 1;</span> j &lt; array.length; j++) {</span>
-<span class="cstat-no" title="statement not covered" >                if (array[j] &lt; array[min_i]) {</span>
-<span class="cstat-no" title="statement not covered" >                    min_i = j;</span>
+            for (var j = i + 1; j &lt; array.length; j++) {
+                if (array[j] &lt; array[min_i]) {
+                    min_i = j;
                 }
             }
             /* меняем значения местами */
-            let temp = <span class="cstat-no" title="statement not covered" >array[i];</span>
-<span class="cstat-no" title="statement not covered" >            array[i] = array[min_i];</span>
-<span class="cstat-no" title="statement not covered" >            array[min_i] = temp;</span>
+            let temp = array[i];
+            array[i] = array[min_i];
+            array[min_i] = temp;
         }
-<span class="cstat-no" title="statement not covered" >    return array;</span>
+    return array;
 }
 &nbsp;
 module.exports = { sortSelect }
@@ -121,7 +121,7 @@ module.exports = { sortSelect }
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Thu Aug 12 2021 16:51:16 GMT+0300 (Восточная Европа, летнее время)
+                at Mon Aug 16 2021 16:27:37 GMT+0300 (Восточная Европа, летнее время)
             </div>
         </div>
         <script src="../prettify.js"></script>

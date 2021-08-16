@@ -1,5 +1,5 @@
 function reversArray(array) {
-    const arrayRevers = new Array();
+    const arrayRevers = [];
     let last_index = array.length - 1;
     for (var i = 0; i < array.length; i++) {
         arrayRevers.push (array[last_index]);
